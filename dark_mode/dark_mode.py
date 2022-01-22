@@ -28,7 +28,7 @@ if __name__=="__main__":
     pages = int(re.search('Pages:\s*([0-9]*)',info).group(1))
     
     # pdf -> images
-    os.system('mutool draw -r 600 -o {}_%5d.png {}'.format(
+    os.system('mutool draw -r 600 -o {}_%05d.png {}'.format(
         pdf_input_name.replace('.pdf',''),pdf_input_name))
     # todo: arg-resolution
 
