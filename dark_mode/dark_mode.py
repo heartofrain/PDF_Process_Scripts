@@ -15,7 +15,7 @@ max=130
 
 # map the gray range [0,255] to gray range [min,max]
 def transform(x):
-    return ((max-min)-x//255*(max-min))+min
+    return ((max-min)-x/255*(max-min))+min
 
 if __name__=="__main__":
     # todo: arg parse
