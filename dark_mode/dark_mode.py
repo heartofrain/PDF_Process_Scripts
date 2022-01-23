@@ -41,7 +41,7 @@ if __name__=="__main__":
             pdf_input_name.replace('.pdf',''),i))
 
     # images -> pdf
-    os.system('convert {0}_out_*.png {0}_output.pdf'.format(
+    os.system('mutool convert -O compress -o {0}_output.pdf {0}_out_*.png'.format(
         pdf_input_name.replace('.pdf','')))
 
     # delete images
